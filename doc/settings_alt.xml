@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>D:\maven\alt\repository</localRepository>
+    <pluginGroups></pluginGroups>
+    <proxies></proxies>
+	<servers>      
+        <server>
+            <id>nexus</id>
+            <username>anlutong</username>
+            <password>anlutong</password>
+        </server>
+        <server>
+            <id>ali</id>
+            <username>ali</username>
+            <password>ali</password>
+        </server>
+        <server>
+            <id>nexus-snapshots</id>
+            <username>anlutong</username>
+            <password>anlutong</password>
+        </server>
+    </servers>
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://134.175.84.220:8081/nexus/repository/maven-public/</url>
+        </mirror>
+        <mirror>
+            <id>ali</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </mirror>
+        <mirror>
+            <id>nexus-public-snapshots</id>
+            <mirrorOf>public-snapshots</mirrorOf>
+            <url>http://maven.aliyun.com/nexus/content/repositories/snapshots/</url>
+        </mirror>
+    </mirrors>
+    <profiles></profiles>
+</settings>
